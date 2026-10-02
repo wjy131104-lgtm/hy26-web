@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HYPER Works - Next-Gen Discord Solutions</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome 아이콘 라이브러리 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+</head>
+
+<body>
+
+  <!-- 배경 빛 효과 -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- 상단 네비게이션 -->
+  <header>
+    <nav class="navbar">
+
+      <div class="logo">
+        <i class="fa-solid fa-bolt logo-icon"></i>
+        <span>HYPER <span class="highlight">Works</span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">HYPER Works</a></li>
+        <li><a href="#products">제품 라인업</a></li>
+        <li><a href="#support">커뮤니티/지원</a></li>
+      </ul>
+
+      <a href="#products" class="btn btn-secondary nav-btn">
+        제품 둘러보기
+      </a>
+
+    </nav>
+  </header>
+
+
+  <!-- 메인 브랜드 히어로 -->
+  <section id="about" class="hero">
+
+    <div class="hero-content">
+
+      <span class="badge">
+        🚀 Discord Bot & Web Project
+      </span>
+
+      <h1>
+        디스코드 생태계의 새로운 가능성,
+        <br>
+        <span class="gradient-text">HYPER Works</span>
+      </h1>
+
+      <p>
+        HYPER Works는 디스코드 서버 경험을 혁신하는
+        유용한 봇과 웹 서비스를 연구하고 개발합니다.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 제품 라인업 -->
+  <section id="products" class="products">
+
+    <div class="section-title">
+
+      <h2>HYPER Works 제품군</h2>
+
+      <p>
+        HYPER Works에서 현재 개발 및 운영 중인 정식 프로젝트입니다.
+      </p>
+
+    </div>
+
+
+    <!-- =========================================================
+         1차 프로젝트 : HYPER Canvas
+    ========================================================== -->
+
+    <div class="product-card featured-product">
+
+      <div class="product-status">
+
+        <span class="status-badge status-live">
+          <i class="fa-solid fa-circle"></i>
+          정식 운영 중
+        </span>
+
+        <span class="product-tag">
+          1st Project • AI 디스코드 봇
+        </span>
+
+      </div>
+
+
+      <div class="product-body">
+
+        <div class="product-info">
+
+          <div class="product-logo">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <h3>HYPER Canvas</h3>
+
+          </div>
+
+
+          <p class="product-desc">
+
+            디스코드 채널에서 편하게 사용하는
+            AI 그림 생성 봇입니다.
+            완벽한 한국어를 지원하며 누구나 제한 없이
+            무료로 이용할 수 있습니다.
+
+          </p>
+
+
+          <ul class="product-features">
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>100% 무료 이용</strong>
+              (제한 없이 가볍게 사용 가능)
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>완벽한 한국어 지원</strong>
+              (한국어 프롬프트 그대로 생성)
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>안전한 클린 시스템</strong>
+              (선정적·폭력적 이미지 필터링 차단)
+            </li>
+
+          </ul>
+
+
+          <div class="product-actions">
+
+            <button
+              type="button"
+              id="inviteBotBtn"
+              class="btn btn-primary btn-lg"
+            >
+              <i class="fa-brands fa-discord"></i>
+              HYPER Canvas 서버에 초대하기
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Canvas 통계 -->
+
+      <div class="bot-stats-container">
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            가동률 (Uptime)
+          </span>
+
+          <span class="stat-value highlight-green">
+            100%
+          </span>
+
+        </div>
+
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            활성 서버
+          </span>
+
+          <span class="stat-value">
+            2개
+          </span>
+
+        </div>
+
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            사용 인원
+          </span>
+
+          <span class="stat-value">
+            41명
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         2차 프로젝트 : HYPER Guard
+    ========================================================== -->
+
+    <div class="product-card featured-product">
+
+      <div class="product-status">
+
+        <span class="status-badge status-live">
+          <i class="fa-solid fa-circle"></i>
+          정식 운영 중
+        </span>
+
+        <span class="product-tag">
+          2nd Project • 서버 보안 & 클린 봇
+        </span>
+
+      </div>
+
+
+      <div class="product-body">
+
+        <div class="product-info">
+
+          <div class="product-logo">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>HYPER Guard</h3>
+
+          </div>
+
+
+          <p class="product-desc">
+
+            디스코드 서버의 클린한 환경을 유지하는
+            감시 및 보안 봇입니다.
+            채팅 중 발생하는 비속어, 욕설, 선정적 단어를
+            실시간으로 감지하고 관리자에게 즉시 보고합니다.
+
+          </p>
+
+
+          <ul class="product-features">
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>실시간 유해어 필터링</strong>
+              (비속어, 욕설, 선정적 단어 자동 감지)
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>관리자 실시간 보고 시스템</strong>
+              (위반 내역 지정 로그 채널 전송)
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>쾌적한 커뮤니티 환경 조성</strong>
+              (서버 규정 준수 및 자동으로 클린 환경 유지)
+            </li>
+
+          </ul>
+
+
+          <div class="product-actions">
+
+            <button
+              type="button"
+              id="inviteGuardBtn"
+              class="btn btn-primary btn-lg"
+            >
+              <i class="fa-brands fa-discord"></i>
+              HYPER Guard 서버에 초대하기
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Guard 통계 -->
+
+      <div class="bot-stats-container">
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            가동률 (Uptime)
+          </span>
+
+          <span class="stat-value highlight-green">
+            100%
+          </span>
+
+        </div>
+
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            활성 서버
+          </span>
+
+          <span class="stat-value">
+            2개
+          </span>
+
+        </div>
+
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            사용 인원
+          </span>
+
+          <span class="stat-value">
+            38명
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         3차 프로젝트 : HYPER AI
+    ========================================================== -->
+
+    <div class="product-card featured-product">
+
+      <div class="product-status">
+
+        <span class="status-badge status-live">
+          <i class="fa-solid fa-circle"></i>
+          정식 운영 중
+        </span>
+
+        <span class="product-tag">
+          3rd Project • AI 디스코드 봇
+        </span>
+
+      </div>
+
+
+      <div class="product-body">
+
+        <div class="product-info">
+
+          <div class="product-logo">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>HYPER AI</h3>
+
+          </div>
+
+
+          <p class="product-desc">
+
+            디스코드 서버에서 다양한 질문과 작업을
+            편리하게 처리할 수 있는 AI 봇입니다.
+            질문에 대한 답변, 설명, 요약, 번역, 코딩,
+            계산 등 다양한 분야의 대화를 지원합니다.
+
+          </p>
+
+
+          <ul class="product-features">
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>다양한 질문 지원</strong>
+              (일상 질문, 설명, 요약, 번역 등)
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>개발 및 코딩 지원</strong>
+              (코드 작성, 분석, 오류 설명 등)
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <strong>안전한 콘텐츠 운영</strong>
+              (유해 요청 및 정책 위반 콘텐츠 제한)
+            </li>
+
+          </ul>
+
+
+          <div class="product-actions">
+
+            <button
+              type="button"
+              id="inviteAIBtn"
+              class="btn btn-primary btn-lg"
+            >
+              <i class="fa-brands fa-discord"></i>
+              HYPER AI 서버에 초대하기
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- AI 통계 -->
+
+      <div class="bot-stats-container">
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            가동률 (Uptime)
+          </span>
+
+          <span class="stat-value highlight-green">
+            100%
+          </span>
+
+        </div>
+
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            활성 서버
+          </span>
+
+          <span class="stat-value">
+            1개
+          </span>
+
+        </div>
+
+
+        <div class="bot-stat-item">
+
+          <span class="stat-label">
+            사용 인원
+          </span>
+
+          <span class="stat-value">
+            0명
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         다음 프로젝트
+    ========================================================== -->
+
+    <div class="product-card coming-soon-card">
+
+      <div class="product-status">
+
+        <span class="status-badge status-upcoming">
+
+          <i class="fa-solid fa-clock"></i>
+
+          준비 중
+
+        </span>
+
+        <span class="product-tag">
+          Next Project
+        </span>
+
+      </div>
+
+
+      <div class="coming-soon-body">
+
+        <h3>
+          HYPER Works의 다음 프로젝트가 곧 찾아옵니다.
+        </h3>
+
+        <p>
+          더 스마트하고 강력한 디스코드 유틸리티 및
+          관리 도구를 기대해 주세요.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       커뮤니티 / 지원
+  ========================================================== -->
+
+  <section id="support" class="support-section">
+
+    <div class="support-content">
+
+      <h2>
+        HYPER Works 커뮤니티
+      </h2>
+
+      <p>
+        HYPER Works의 신규 업데이트 소식과
+        새로운 프로젝트 정보를 가장 먼저 접해보세요.
+      </p>
+
+
+      <div class="support-buttons">
+
+        <a
+          href="https://discord.gg/FMpjCAHy5F"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-secondary btn-lg"
+        >
+
+          <i class="fa-brands fa-discord"></i>
+
+          공식 디스코드 서버 참가
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       법적 문서 / 초대 동의 모달
+  ========================================================== -->
+
+  <div
+    id="legalModal"
+    class="legal-modal"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="legalModalTitle"
+  >
+
+    <div
+      class="legal-modal-backdrop"
+      data-close-modal
+    ></div>
+
+
+    <div class="legal-modal-panel">
+
+      <button
+        type="button"
+        class="legal-modal-close"
+        data-close-modal
+        aria-label="닫기"
+      >
+        &times;
+      </button>
+
+
+
+      <!-- 초대 동의 화면 -->
+
+      <div
+        id="inviteConsentView"
+        class="legal-view"
+      >
+
+        <span class="legal-modal-badge">
+          HYPER Canvas
+        </span>
+
+
+        <h2 id="legalModalTitle">
+          HYPER Canvas 초대 전 동의
+        </h2>
+
+
+        <p class="legal-intro">
+          봇을 서버에 초대하기 전에 아래 내용을 확인해 주세요.
+        </p>
+
+
+        <div class="consent-summary">
+          <!-- JS에서 자동 삽입 -->
+        </div>
+
+
+        <div class="consent-links">
+
+          <button
+            type="button"
+            class="text-link legal-open-inner"
+            data-legal="terms"
+          >
+            이용약관 전문
+          </button>
+
+
+          <button
+            type="button"
+            class="text-link legal-open-inner"
+            data-legal="privacy"
+          >
+            개인정보처리방침 전문
+          </button>
+
+
+          <button
+            type="button"
+            class="text-link legal-open-inner"
+            data-legal="policy"
+          >
+            콘텐츠 운영정책 전문
+          </button>
+
+        </div>
+
+
+        <label class="consent-check">
+
+          <input
+            type="checkbox"
+            id="termsConsent"
+          >
+
+          <span>
+            이용약관 및 개인정보처리방침을 확인했으며 이에 동의합니다.
+          </span>
+
+        </label>
+
+
+        <button
+          type="button"
+          id="confirmInviteBtn"
+          class="btn btn-primary btn-lg consent-confirm"
+          disabled
+        >
+
+          <i class="fa-brands fa-discord"></i>
+
+          동의하고 Discord 초대 계속하기
+
+        </button>
+
+      </div>
+
+
+
+      <!-- 전문 보기 -->
+
+      <div
+        id="legalDocumentView"
+        class="legal-view hidden"
+      >
+
+        <button
+          type="button"
+          class="back-to-consent"
+        >
+
+          <i class="fa-solid fa-arrow-left"></i>
+
+          초대 동의 화면으로
+
+        </button>
+
+
+        <h2 id="documentTitle"></h2>
+
+
+        <div
+          id="documentBody"
+          class="legal-document-body"
+        ></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =========================================================
+       푸터
+  ========================================================== -->
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-logo">
+
+        <i class="fa-solid fa-bolt"></i>
+
+        HYPER Works
+
+      </div>
+
+
+      <p>
+        © 2026 HYPER Works. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="main.js"></script>
+
+</body>
+</html>
