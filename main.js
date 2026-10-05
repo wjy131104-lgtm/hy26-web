@@ -705,12 +705,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* =======================================================
-       HYPER AI
+      HYPER Chat
     ======================================================== */
 
     ai: {
 
-      name: 'HYPER AI',
+      name: 'HYPER Chat',
 
       /*
        * 사용자가 제공한 Discord 초대 URL
@@ -746,12 +746,12 @@ document.addEventListener('DOMContentLoaded', () => {
       legalDocuments: {
 
         /* =====================================================
-           HYPER AI 이용약관
+           HYPER Chat 이용약관
         ====================================================== */
 
         terms: {
 
-          title: '📜 HYPER AI 이용약관',
+          title: '📜 HYPER Chat 이용약관',
 
           html: `
 
@@ -764,7 +764,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <p>
               본 약관은 HYPER Works가 운영하는 Discord 봇
-              HYPER AI의 이용조건과 운영자 및 이용자의
+              HYPER Chat의 이용조건과 운영자 및 이용자의
               권리·의무를 정합니다.
             </p>
 
@@ -792,7 +792,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>제3조 (서비스)</h3>
 
             <p>
-              HYPER AI는 Discord에서 AI 기반 답변 기능을
+              HYPER Chat은 Discord에서 AI 기반 답변 기능을
               제공하는 서비스입니다.
               이용자의 질문을 처리하고 답변을 생성하며,
               질문에 대한 설명, 요약, 번역, 코딩,
@@ -918,12 +918,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         /* =====================================================
-           HYPER AI 개인정보처리방침
+           HYPER Chat 개인정보처리방침
         ====================================================== */
 
         privacy: {
 
-          title: '🔒 HYPER AI 개인정보처리방침',
+          title: '🔒 HYPER Chat 개인정보처리방침',
 
           html: `
 
@@ -1066,12 +1066,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         /* =====================================================
-           HYPER AI 콘텐츠 운영정책
+           HYPER Chat 콘텐츠 운영정책
         ====================================================== */
 
         policy: {
 
-          title: '🛡️ HYPER AI 콘텐츠 운영정책',
+          title: '🛡️ HYPER Chat 콘텐츠 운영정책',
 
           html: `
 
