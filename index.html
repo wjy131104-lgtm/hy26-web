@@ -94,7 +94,7 @@
 
         <span class="status-badge status-maintenance">
           <i class="fa-solid fa-circle"></i>
-          점검 중
+          <span class="status-label">점검 중</span>
         </span>
 
         <span class="product-tag">
@@ -226,7 +226,7 @@
 
         <span class="status-badge status-live">
           <i class="fa-solid fa-circle"></i>
-          정식 운영 중
+          <span class="status-label">가동 중</span>
         </span>
 
         <span class="product-tag">
@@ -358,7 +358,7 @@
 
         <span class="status-badge status-live">
           <i class="fa-solid fa-circle"></i>
-          정식 운영 중
+          <span class="status-label">가동 중</span>
         </span>
 
         <span class="product-tag">
@@ -581,7 +581,6 @@
       data-close-modal
     ></div>
 
-
     <div class="legal-modal-panel">
 
       <button
@@ -712,6 +711,31 @@
         ></div>
 
       </div>
+        <!-- 점검 안내 화면 -->
+
+        <div
+          id="maintenanceView"
+          class="legal-view hidden"
+        >
+
+          <span
+            id="maintenanceModalBadge"
+            class="legal-modal-badge"
+          >
+            HYPER Canvas
+          </span>
+
+          <h2 id="maintenanceModalTitle">
+            해당 봇은 점검 중입니다
+          </h2>
+
+          <p class="legal-intro">
+            이용에 불편을 드려 죄송합니다. 점검이 완료된 후 다시 이용해 주세요.
+          </p>
+
+        </div>
+
+
 
     </div>
 

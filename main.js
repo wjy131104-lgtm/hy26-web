@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
      봇별 설정
   ========================================================== */
 
+    // maintenance: 1이면 점검 안내, 0이면 동의 화면. uptime은 정상 운영 시 표시값입니다.
   const botConfigs = {
 
     /* =======================================================
@@ -75,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas: {
 
       name: 'HYPER Canvas',
+      maintenance: 1,
+      uptime: '100%',
 
       inviteUrl:
         'https://discord.com/oauth2/authorize?client_id=1550495194011668500&permissions=8&integration_type=0&scope=bot+applications.commands',
@@ -426,6 +429,8 @@ document.addEventListener('DOMContentLoaded', () => {
     guard: {
 
       name: 'HYPER Guard',
+      maintenance: 0,
+      uptime: '100%',
 
       inviteUrl:
         'https://discord.com/oauth2/authorize?client_id=1550795954012033114&permissions=8&integration_type=0&scope=bot+applications.commands',
@@ -711,6 +716,8 @@ document.addEventListener('DOMContentLoaded', () => {
     ai: {
 
       name: 'HYPER Chat',
+      maintenance: 0,
+      uptime: '100%',
 
       /*
        * 사용자가 제공한 Discord 초대 URL
@@ -1162,6 +1169,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  const botButtonIds = {
+    canvas: 'inviteBotBtn',
+    guard: 'inviteGuardBtn',
+    ai: 'inviteAIBtn'
+  };
+
+  Object.entries(botConfigs).forEach(([botKey, config]) => {
+
+    const card = document
+      .getElementById(botButtonIds[botKey])
+      ?.closest('.product-card');
+
+    if (!card) return;
+
+    const isMaintenance = config.maintenance === 1;
+    const statusBadge = card.querySelector('.status-badge');
+    const uptimeValue = card.querySelector('.bot-stat-item .stat-value');
+
+    statusBadge.classList.toggle('status-maintenance', isMaintenance);
+    statusBadge.classList.toggle('status-live', !isMaintenance);
+    statusBadge.querySelector('.status-label').textContent =
+      isMaintenance ? '점검 중' : '가동 중';
+
+    uptimeValue.textContent =
+      isMaintenance ? '-%' : config.uptime;
+    uptimeValue.classList.toggle('highlight-green', !isMaintenance);
+
+  });
+
+
   /* =========================================================
      모달 요소
   ========================================================== */
@@ -1173,6 +1210,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const inviteConsentView =
     document.getElementById('inviteConsentView');
+
+  const maintenanceView =
+    document.getElementById('maintenanceView');
+
+  const maintenanceModalBadge =
+    document.getElementById('maintenanceModalBadge');
 
   const legalDocumentView =
     document.getElementById('legalDocumentView');
@@ -1214,6 +1257,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     modalBadge.textContent = config.name;
+    maintenanceModalBadge.textContent = config.name;
 
     modalTitle.textContent =
       `${config.name} 초대 전 동의`;
@@ -1237,6 +1281,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     legalModal.classList.add('open');
 
+    if (config.maintenance === 1) {
+      legalModal.setAttribute(
+        'aria-labelledby',
+        'maintenanceModalTitle'
+      );
+      showMaintenanceView();
+    } else {
+      legalModal.setAttribute(
+        'aria-labelledby',
+        'legalModalTitle'
+      );
+      showConsentView();
+    }
+
     legalModal.setAttribute(
       'aria-hidden',
       'false'
@@ -1244,8 +1302,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.body.classList.add('modal-open');
 
-
-    showConsentView();
 
   }
 
@@ -1279,6 +1335,19 @@ document.addEventListener('DOMContentLoaded', () => {
   function showConsentView() {
 
     inviteConsentView.classList.remove('hidden');
+
+    maintenanceView.classList.add('hidden');
+
+    legalDocumentView.classList.add('hidden');
+
+  }
+
+
+  function showMaintenanceView() {
+
+    inviteConsentView.classList.add('hidden');
+
+    maintenanceView.classList.remove('hidden');
 
     legalDocumentView.classList.add('hidden');
 
