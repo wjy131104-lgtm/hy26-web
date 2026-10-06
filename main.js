@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     canvas: {
 
       name: 'HYPER Canvas',
-      maintenance: 1,
+      maintenance: 0,
       uptime: '100%',
 
       inviteUrl:
