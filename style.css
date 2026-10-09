@@ -82,8 +82,37 @@ header {
   gap: 10px;
 }
 
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .logo-icon {
   color: var(--primary);
+}
+
+.hangulday-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px 5px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: #f4d48c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16);
+}
+
+.hangulday-flag {
+  display: block;
+  width: 30px;
+  height: 21px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.14));
 }
 
 .highlight {
@@ -589,8 +618,32 @@ footer {
 
 /* 반응형 모바일 */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0.9rem 1.2rem;
+  }
   .nav-links {
     display: none;
+  }
+  .brand-lockup {
+    gap: 8px;
+  }
+  .logo {
+    white-space: nowrap;
+  }
+  .hangulday-mark {
+    gap: 4px;
+    padding: 4px 6px 4px 4px;
+    font-size: 0.7rem;
+  }
+  .hangulday-flag {
+    width: 27px;
+    height: 19px;
+  }
+  .navbar .nav-btn {
+    width: auto;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.78rem;
+    white-space: nowrap;
   }
   .hero h1 {
     font-size: 2.1rem;
@@ -607,5 +660,11 @@ footer {
     width: calc(100% - 20px);
     max-height: calc(100vh - 20px);
     margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .nav-btn {
+    display: none;
   }
 }
